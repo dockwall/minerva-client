@@ -16,15 +16,17 @@ import Layout from "./layout/Layout";
 
 const App = () => {
     return (
-        <Routes>
-            <Route path="/" element={<Layout />}>
-                <Route index element={<StreamList />} />
-                <Route path="new" element={<StreamCreate />} />
-                <Route path="delete" element={<StreamDelete />} />
-                <Route path="show" element={<StreamShow />} />
-                <Route path="edit" element={<StreamEdit />} />
-            </Route>
-        </Routes>
+        <div className="ui container">
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<StreamList />} />
+                    <Route path="new" element={<StreamCreate />} />
+                    <Route path="delete" element={<StreamDelete />} />
+                    <Route path="show" element={<StreamShow />} />
+                    <Route path="edit" element={<StreamEdit />} />
+                </Route>
+            </Routes>
+        </div>
     );
 };
 

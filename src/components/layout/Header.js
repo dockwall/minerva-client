@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <header>
-            <h1>Minerva - minimalistic Stream service</h1>
-            <Link to="/">All Streams</Link>
-            <Link to="/new">Create new Stream</Link>
+            <div className="ui secondary pointing menu">
+                <Link to="/" className="item">Minerva - minimalistic Stream service</Link>
+                <div className="right menu">
+                    <Link to="/" className="item">All Streams</Link>
+                </div>
+            </div>
         </header>
     )
 };
